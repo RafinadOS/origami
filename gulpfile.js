@@ -40,7 +40,7 @@ gulp.task('less', function () {
 
 // move images for styles
 gulp.task('img', function() {
-   return gulp.src(['img/*.jpg','img/*.png',])
+   return gulp.src(['img/*.jpg','img/*.png', 'img/*.svg',])
    .pipe(gulp.dest('app/img/'))
    .pipe(connect.reload())
 });

@@ -175,14 +175,14 @@ header-in {
   padding: 30px 0;
 }
 .header__logo {
-  float: left;
-  overflow: hidden;
+  display: inline-block;
   font-size: 39px;
   font-weight: 900;
   letter-spacing: -1px;
   line-height: 39px;
-  padding: 0 10px;
+  padding: 0 10px 0 110px;
   color: #f659b2;
+  position: relative;
 }
 .header__logo .color {
   color: #6197c5;
@@ -194,4 +194,18 @@ header-in {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0;
+}
+.header__logo:before {
+  content: '';
+  display: block;
+  vertical-align: middle;
+  width: 100px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: url('../img/header_logo.svg') 0 0 no-repeat;
 }
