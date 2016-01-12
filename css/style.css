@@ -138,6 +138,7 @@ table {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 html,
 body {
@@ -155,6 +156,8 @@ header {
   overflow: hidden;
   width: 100%;
   min-width: 1090px;
+  height: 345px;
+  background: #fff url('../img/bg_cloud.jpg') center top no-repeat;
 }
 header-in {
   clear: both;
@@ -169,18 +172,26 @@ header-in {
   overflow: hidden;
   width: 1090px;
   margin: auto;
+  padding: 30px 0;
 }
 .header__logo {
   float: left;
   overflow: hidden;
-  font-size: 34px;
+  font-size: 39px;
   font-weight: 900;
   letter-spacing: -1px;
-  line-height: 34px;
+  line-height: 39px;
   padding: 0 10px;
+  color: #f659b2;
 }
-.header__logo span {
-  clear: both;
+.header__logo .color {
+  color: #6197c5;
+}
+.header__logo .small {
   float: right;
-  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0;
 }
