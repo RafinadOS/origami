@@ -132,3 +132,45 @@ header {
 		}
 	}
 }
+
+
+@media(max-width:768px) {
+	header {
+		width: 100%;
+		min-width: 0;
+		height: 100vh;
+	}
+	.header {
+		width: 100%;
+		min-width: 0;
+		text-align: center;
+		display: table-cell;
+		width: 100vw;
+		height: 100vh;
+		vertical-align: middle;
+	}
+	.slogan {
+		width: 100%;
+		&__text {
+			overflow: visible;
+			text-align: auto;
+			& br {
+				display: none;
+			}
+			& .small {
+				display: block;
+				width: auto;
+				text-align: right;
+			}
+			& .midle {
+				display: block;
+				text-align: right;
+			}
+			& .big {
+				display: block;
+				margin: 0;
+				line-height: normal;
+			}
+		}
+	}
+}

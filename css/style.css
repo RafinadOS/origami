@@ -253,3 +253,43 @@ header-in {
   font-size: 120px;
   text-shadow: 5px 5px 0 #dde9f3;
 }
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    min-width: 0;
+    height: 100vh;
+  }
+  .header {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+  }
+  .slogan {
+    width: 100%;
+  }
+  .slogan__text {
+    overflow: visible;
+    text-align: auto;
+  }
+  .slogan__text br {
+    display: none;
+  }
+  .slogan__text .small {
+    display: block;
+    width: auto;
+    text-align: right;
+  }
+  .slogan__text .midle {
+    display: block;
+    text-align: right;
+  }
+  .slogan__text .big {
+    display: block;
+    margin: 0;
+    line-height: normal;
+  }
+}
